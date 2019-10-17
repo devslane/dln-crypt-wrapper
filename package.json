@@ -1,0 +1,36 @@
+{
+  "name": "dln-crypt-wrapper",
+  "version": "0.0.1",
+  "description": "Crypt Wrapper in node.",
+  "keywords": [
+    "DLN",
+    "crypt",
+    "node"
+  ],
+  "license": "MIT",
+  "author": "Piyush Mishra",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib",
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "npm run build-ts",
+    "build-ts": "./node_modules/typescript/bin/tsc",
+    "docs": "typedoc --out docs lib",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "async": "^3.1.0",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@types/async": "^3.0.3",
+    "@types/lodash": "^4.14.123",
+    "tslint": "^5.13.0",
+    "typedoc": "^0.15.0",
+    "typescript": "^3.2.2"
+  }
+}
