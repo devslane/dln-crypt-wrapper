@@ -1,6 +1,6 @@
 {
   "name": "dln-crypt-wrapper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Crypt Wrapper in node.",
   "keywords": [
     "DLN",
