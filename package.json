@@ -1,6 +1,6 @@
 {
   "name": "dln-crypt-wrapper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Crypt Wrapper in node.",
   "keywords": [
     "DLN",
@@ -24,11 +24,13 @@
   },
   "dependencies": {
     "async": "^3.1.0",
+    "bcrypt": "^3.0.6",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
     "@types/async": "^3.0.3",
     "@types/lodash": "^4.14.123",
+    "@types/node": "^12.11.1",
     "tslint": "^5.13.0",
     "typedoc": "^0.15.0",
     "typescript": "^3.2.2"
