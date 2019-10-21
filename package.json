@@ -1,5 +1,5 @@
 {
-  "name": "dln-crypt-wrapper",
+  "name": "@devslane/dln-crypt-wrapper",
   "version": "0.0.3",
   "description": "Crypt Helper methods for NodeJS Applications.",
   "keywords": [
@@ -43,6 +43,6 @@
     "npm": ">= 6.9.0"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/devslane"
   }
 }
