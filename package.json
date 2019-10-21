@@ -1,6 +1,6 @@
 {
   "name": "@devslane/dln-crypt-wrapper",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Crypt Helper methods for NodeJS Applications.",
   "keywords": [
     "DLN",
