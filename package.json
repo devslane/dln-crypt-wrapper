@@ -1,15 +1,18 @@
 {
   "name": "dln-crypt-wrapper",
   "version": "0.0.3",
-  "description": "Crypt Wrapper in node.",
+  "description": "Crypt Helper methods for NodeJS Applications.",
   "keywords": [
     "DLN",
     "crypt",
     "node"
   ],
+  "homepage": "https://devslane.com",
+  "bugs": "https://github.com/devslane/dln-crypt-wrapper/issues",
+  "repository": "github:devslane/dln-crypt-wrapper",
   "license": "MIT",
-  "author": "Piyush Mishra",
-  "main": "dist/index.js",
+  "author": "Piyush Mishra <piyush0mishra@gmail.com>",
+  "main": "index.js",
   "directories": {
     "lib": "lib",
     "doc": "docs",
@@ -34,5 +37,12 @@
     "tslint": "^5.13.0",
     "typedoc": "^0.15.0",
     "typescript": "^3.2.2"
+  },
+  "engines": {
+    "node": ">= 10.16.0",
+    "npm": ">= 6.9.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
