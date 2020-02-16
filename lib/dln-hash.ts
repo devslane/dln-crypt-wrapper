@@ -1,4 +1,4 @@
-import * as bcrypt from "bcrypt";
+import * as bcrypt from 'bcrypt';
 
 export class DlnHash {
     private readonly SALT_ROUNDS: number;

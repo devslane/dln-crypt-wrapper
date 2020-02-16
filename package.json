@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "Crypt Helper methods for NodeJS Applications.",
   "keywords": [
+    "DevsLane",
+    "Wrapper",
     "DLN",
     "crypt",
     "node"
@@ -40,9 +42,6 @@
   },
   "engines": {
     "node": ">= 10.16.0",
-    "npm": ">= 6.9.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/devslane"
+    "yarn": ">= 1.9.0"
   }
 }

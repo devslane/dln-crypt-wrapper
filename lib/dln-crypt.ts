@@ -1,5 +1,5 @@
-import { CryptAlg } from "./helpers/enums/crypt-alg.enum";
-import * as crypto from "crypto";
+import { CryptAlg } from './helpers/enums/crypt-alg.enum';
+import * as crypto from 'crypto';
 
 export class DlnCrypt {
     private readonly ALG: CryptAlg;
@@ -13,19 +13,19 @@ export class DlnCrypt {
     }
 
     encrypt(plainText: string): string {
-        const cipher = crypto.createCipheriv(this.ALG, Buffer.from(this.KEY, "hex"), Buffer.from(this.IV, "hex"));
+        const cipher = crypto.createCipheriv(this.ALG, Buffer.from(this.KEY, 'hex'), Buffer.from(this.IV, 'hex'));
         const data = new Buffer(plainText);
 
         const encrypted = Buffer.concat([cipher.update(data), cipher.final()]);
 
-        return encrypted.toString("hex");
+        return encrypted.toString('hex');
     }
 
     decrypt(encryptedText: string): string {
-        const decipher = crypto.createDecipheriv(this.ALG, Buffer.from(this.KEY, "hex"), Buffer.from(this.IV, "hex"));
+        const decipher = crypto.createDecipheriv(this.ALG, Buffer.from(this.KEY, 'hex'), Buffer.from(this.IV, 'hex'));
 
-        let text = decipher.update(encryptedText, "hex", "utf8");
-        text += decipher.final("utf8");
+        let text = decipher.update(encryptedText, 'hex', 'utf8');
+        text += decipher.final('utf8');
 
         return text;
     }
